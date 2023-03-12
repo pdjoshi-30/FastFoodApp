@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/mediumgray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="333dp"
+            android:layout_height="45dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/search_btt"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:drawablePadding="9dp"
+            android:hint="Search Your Food"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_margin="6dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Hello,Foody"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="342dp"
+            android:layout_height="37dp"
+            android:layout_margin="6dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Don't Starve much"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginLeft="14dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_hor_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_ver_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_hor_rec" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        
+
+
+</androidx.core.widget.NestedScrollView>
